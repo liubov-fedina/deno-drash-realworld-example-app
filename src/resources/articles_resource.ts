@@ -41,7 +41,7 @@ class ArticlesResource extends BaseResource {
 
   public async PUT(): Promise<Drash.Http.Response> {
     console.log("Handling ArticlesResource PUT");
-    console.log('You have found one of the two bugs for this task, add these logs to your bug report.');
+    console.log('You have found one of the two bugs for this task! Describe the bug and add these logs to your bug report.');
     console.log('NOTE: These logs are here just for fun. The real error logs are more comprehensive and informative.');
     console.log(`
     ▒▒▒▒▒▒▒▓
@@ -63,9 +63,7 @@ class ArticlesResource extends BaseResource {
     ▒▓▒▒▒▒▒▒▒▓
     ▒▒▓▒▒▒▒▒▓
     `);
-    console.log('You have found one of the two bugs for this task, add these logs to your bug report.');
-
-    return await this.createArticle();
+    console.log('You have found one of the two bugs for this task! Describe the bug and add these logs to your bug report.');
   }
 
   public async DELETE(): Promise<Drash.Http.Response> {

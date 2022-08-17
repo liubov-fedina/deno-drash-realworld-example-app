@@ -48,7 +48,7 @@ export default class ArticleCommentsResource extends BaseResource {
   }
 
   public async POST() {
-    console.log('You have found one of the two bugs for this task! Add these logs to your bug report.');
+    console.log('You have found one of the two bugs for this task! Describe the bug and add these logs to your bug report.');
     console.log('NOTE: These logs are here just for fun. The real error logs are more comprehensive and informative.');
     console.log(`
     ░░░░░░░░░░░░░░░░░░░░░░░
@@ -73,7 +73,7 @@ export default class ArticleCommentsResource extends BaseResource {
     ░█░░░░░░░░░░░░░░░░░░░█░
     ░█░░░░░░░░░░░░░░░░░░░█░
     `);
-    console.log('You have found one of the two bugs for this task! Add these logs to your bug report.');
+    console.log('You have found one of the two bugs for this task! Describe the bug and add these logs to your bug report.');
     console.log("Handling ArticleCommentsResource POST.");
     const comment = (this.request.getBodyParam("comment") as string);
     const slug = this.request.getPathParam("slug") || "";
