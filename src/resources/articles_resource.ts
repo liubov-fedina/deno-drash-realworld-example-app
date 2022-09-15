@@ -64,6 +64,7 @@ class ArticlesResource extends BaseResource {
     ▒▒▓▒▒▒▒▒▓
     `);
     console.log('You have found one of the two bugs for this task! Describe the bug and add these logs to your bug report.');
+    return await this.updateArticle();
   }
 
   public async DELETE(): Promise<Drash.Http.Response> {
@@ -204,7 +205,7 @@ class ArticlesResource extends BaseResource {
       inputArticle.updated_at,
       inputArticle.id,
     );
-    await article.save();
+    // await article.save();
 
     if (!article) {
       return this.errorResponse(500, "Article could not be saved.");
