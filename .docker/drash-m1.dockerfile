@@ -5,7 +5,7 @@ RUN apt update -y \
   && apt install bash curl unzip -y \
   && apt install -y --no-install-recommends nodejs \
   && apt install -y --no-install-recommends npm \
-  && npm install -g npm@latest
+  && npm install -g npm@6.13.6
 
 RUN curl -fsSL https://deno.land/x/install/install.sh | DENO_INSTALL=/usr/local sh -s v1.5.1
 RUN export DENO_INSTALL="/usr/bin"
