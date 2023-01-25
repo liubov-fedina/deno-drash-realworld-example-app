@@ -33,7 +33,7 @@ Also, you can run the project with `Makefile` ([Unbuntu](https://www.unixmen.com
 
 ```bash
   make up
-  make build-m1
+  make m1
 ```
 
 ## Frontend login
